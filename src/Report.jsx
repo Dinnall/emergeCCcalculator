@@ -24,7 +24,6 @@ class Report extends React.Component{
 				<span className="close-report" onClick={() => this.props.report()}>Close report</span>
 				<h4>Minimum payments will take {Format.months(Result.payoff)} to payoff your debt.</h4>
 				<p>
-					You owe a total of $30,000.00 having a total monthly payment of {Format.usd(Result.monthly)}.
 					If you continue to make the minimum payments it will take you {Format.months(Result.payoff)} to payoff the current card(s).
 					The total interest paid will be {Format.usd(Result.interestPaids)}.
 				</p>

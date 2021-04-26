@@ -17,7 +17,7 @@ class BigResultsSaved extends React.Component {
                     <span>{Format.months(Result.payoff)}</span>
                 </div>
                 <div className="single-result">
-                    <label>Interests Saved</label>
+                    <label style="color:green;">Interests Saved</label>
                     <span>{Format.usd(Result.interestPaid * 100)}</span>
                 </div>
             </div>

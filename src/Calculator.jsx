@@ -7,7 +7,7 @@ class Calculator extends React.Component{
 		super(props);
 		let defaultCards = [
 			{
-				balance: 300000,
+				balance: 100,
 				rate: 20,
 				minimum: 10
 			}

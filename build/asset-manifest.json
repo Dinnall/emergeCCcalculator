@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/emergeCCcalculator/static/css/main.c5bf3286.chunk.css",
-    "main.js": "/emergeCCcalculator/static/js/main.47f060fb.chunk.js",
-    "main.js.map": "/emergeCCcalculator/static/js/main.47f060fb.chunk.js.map",
+    "main.js": "/emergeCCcalculator/static/js/main.9d35f794.chunk.js",
+    "main.js.map": "/emergeCCcalculator/static/js/main.9d35f794.chunk.js.map",
     "runtime-main.js": "/emergeCCcalculator/static/js/runtime-main.27a8a64d.js",
     "runtime-main.js.map": "/emergeCCcalculator/static/js/runtime-main.27a8a64d.js.map",
     "static/css/2.adc6f56e.chunk.css": "/emergeCCcalculator/static/css/2.adc6f56e.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.adc6f56e.chunk.css",
     "static/js/2.dd05ab43.chunk.js",
     "static/css/main.c5bf3286.chunk.css",
-    "static/js/main.47f060fb.chunk.js"
+    "static/js/main.9d35f794.chunk.js"
   ]
 }

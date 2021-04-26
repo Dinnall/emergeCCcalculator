@@ -17,8 +17,8 @@ class BigResultsSaved extends React.Component {
                     <span>{Format.months(Result.payoff)}</span>
                 </div>
                 <div className="single-result">
-                    <label style="color:green;">Interests Saved</label>
-                    <span>{Format.usd(Result.interestPaid * 100)}</span>
+                    <label className="saving-override" style={{ color: "green" }}>Interests Saved</label>
+                    <span className="saving-override" style={{ color: "green" }}>{Format.usd(Result.interestPaid * 100)}</span>
                 </div>
             </div>
             <div className="result-chart single-result">

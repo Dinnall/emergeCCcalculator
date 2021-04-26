@@ -1,0 +1,12 @@
+@media print{
+	.close-report, .print-report{
+		display:none !important;
+	}
+	table{
+		width:100%;
+	}
+	.report-inner{
+		padding:8px;
+		text-align:center;
+	}
+}

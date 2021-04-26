@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,300&display=swap');
+:root{
+	--background: #F2F8DF;
+	--brown: #cfc7b8;
+	--lightpink: #cdbae8;
+	--purple: #341455;
+	--fucsia: #b40c66;
+	--gray: #fafafa;
+	--violet: #33208e;
+	--pink: #c24ba3;
+}
+body{
+	padding:0;
+	margin:0;
+	background: var(--background);
+}
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+input{
+	font-family: 'Oswald'
+}
+.pointer{
+	cursor:pointer;
+}
+.App{
+	display:flex;
+	width:100%;
+	flex-direction: column;
+}
+.Header {
+	margin:50px auto 0 auto;
+	width: 80vw;
+	font-size:2em;
+	font-weight: bold;
+	text-align: center;
+}
+.calculator{
+	margin:20px auto 0 auto;
+	width:80vw;
+	padding:15px;
+}
+.cards-container{
+	display:flex;
+	flex-direction: column;
+}
+
+
+
+@media(max-width: 940px){
+	.Header, .calculator{
+		width:95vw;
+	}
+}
+@media(max-width: 450px){
+	.Header, .calculator{
+		width:98vw;
+	}
+}
+
+
+
+@import url('./card.css');
+@import url('./result.css');
+@import url('./report.css');

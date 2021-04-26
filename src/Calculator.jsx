@@ -1,6 +1,8 @@
 import React from 'react';
 import SingleCard from './SingleCard.jsx';
 import BigResult from './BigResult.jsx';
+import BigResultsSaved from './BigResultsSaved.jsx';
+
 import Report from './Report.jsx';
 class Calculator extends React.Component {
 	constructor(props) {
@@ -32,7 +34,7 @@ class Calculator extends React.Component {
 				</div>
 				<div className="twin-results">
 					<BigResult cards={this.state.cards} report={() => this.setState({ report: false })} addExtra={false} />
-					<BigResult cards={this.state.cards} report={() => this.setState({ report: true })} addExtra={true} />
+					<BigResultsSaved cards={this.state.cards} report={() => this.setState({ report: true })} addExtra={true} />
 				</div>
 				{this.state.report !== 0 &&
 					<Report cards={this.state.cards} report={() => this.setState({ report: 0 })} addExtra={this.state.report} />

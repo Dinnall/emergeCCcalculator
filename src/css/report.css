@@ -1,72 +1,85 @@
-.report{
-	width:100%;
-	height:100%;
+.report {
+	width: 100%;
+	height: 100%;
 	position: fixed;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	background: rgba(0, 0, 0, .7);
-	display:flex;
+	display: flex;
 }
-.report .report-inner{
-	margin:20px auto;
+
+.report .report-inner {
+	margin: 20px auto;
 	background: white;
-	width:800px;
+	width: 800px;
 	max-width: 100vw;
 	overflow: auto;
-	border-radius:4px;
-	padding:16px;
+	border-radius: 4px;
+	padding: 16px;
 }
 
-.close-report, .print-report{
-	display:block;
-	width:100%;
+.close-report,
+.print-report {
+	display: block;
+	width: 100%;
 	text-align: right;
-	color:var(--fucsia);
-	cursor:pointer;
+	color: var(--fucsia);
+	cursor: pointer;
 }
-.print-report{
-	text-align:left;
+
+.print-report {
+	text-align: left;
 }
+
 .report h4,
 .report h3,
-.report p{
-	margin-bottom:1em;
-}
-.report h3{
-	text-align:center;
-}
-.debt-summary, .payment-schedule{
-	width:100%;
-	overflow:auto;
-	margin-bottom:2em;
-}
-.report table{
-	width:100%;
-	border-collapse: collapse;
-}
-.report thead,
-.report tfoot{
-	color:white;
-	background: var(--purple);
-}
-.report td, .report th{
-	padding:8px 16px;
-	border-right:1px solid #ccc;
-	text-align: right;
-}
-.debt-summary thead tr:first-child th{
-	font-size: 1.3em;
-	padding:16px 4px;
-	text-align:center;
+.report p {
+	margin-bottom: 1em;
 }
 
-.report tbody tr:nth-child(even){
+.report h3 {
+	text-align: center;
+}
+
+.debt-summary,
+.payment-schedule {
+	width: 100%;
+	overflow: auto;
+	margin-bottom: 2em;
+}
+
+.report table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.report thead,
+.report tfoot {
+	color: white;
+	background: var(--purple);
+}
+
+.report td,
+.report th {
+	padding: 8px 16px;
+	border-right: 1px solid #ccc;
+	text-align: right;
+}
+
+.debt-summary thead tr:first-child th {
+	font-size: 1.3em;
+	padding: 16px 4px;
+	text-align: center;
+}
+
+.report tbody tr:nth-child(even) {
 	background: #eee;
 }
 
-.report tbody tr:hover{
+.report tbody tr:hover {
 	background: var(--lightpink);
 }
-.report tbody td:hover{
+
+.report tbody td:hover {
 	background: var(--pink);
 }

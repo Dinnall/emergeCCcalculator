@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,300&display=swap');
-:root{
-	--background: #F2F8DF;
+
+:root {
+	--background: #fbf6ef;
 	--brown: #cfc7b8;
 	--lightpink: #cdbae8;
 	--purple: #341455;
@@ -9,55 +10,83 @@
 	--violet: #33208e;
 	--pink: #c24ba3;
 }
-body{
-	padding:0;
-	margin:0;
+
+body {
+	padding: 0;
+	margin: 0;
 	background: var(--background);
 }
-*{
-	padding:0;
-	margin:0;
+
+* {
+	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Roboto', 'Helvetica', sans-serif;
 }
-input{
+
+input {
 	font-family: 'Oswald'
 }
-.pointer{
-	cursor:pointer;
+
+.pointer {
+	cursor: pointer;
 }
-.App{
-	display:flex;
-	width:100%;
+
+.App {
+	display: flex;
+	width: 100%;
 	flex-direction: column;
 }
+
 .Header {
-	margin:50px auto 0 auto;
+	margin: 50px auto 0 auto;
 	width: 80vw;
-	font-size:2em;
+	font-size: 2em;
 	font-weight: bold;
 	text-align: center;
 }
-.calculator{
-	margin:20px auto 0 auto;
-	width:80vw;
-	padding:15px;
+
+.calculator {
+	margin: 20px auto 0 auto;
+	width: 80vw;
+	padding: 15px;
 }
-.cards-container{
-	display:flex;
+
+.cards-container {
+	display: flex;
 	flex-direction: column;
 }
 
+.BalanceChart {
+	width: 90%;
+	height: 300px;
+}
 
 
-@media(max-width: 940px){
-	.Header, .calculator{
-		width:95vw;
+
+@media(max-width: 940px) {
+
+	.Header,
+	.calculator {
+		width: 95vw;
+	}
+
+	.BalanceChart {
+		height: 250px;
 	}
 }
-@media(max-width: 450px){
-	.Header, .calculator{
-		width:98vw;
+
+@media(max-width: 768px) {
+	.BalanceChart {
+		height: 200px;
+	}
+}
+
+@media(max-width: 450px) {
+
+	.Header,
+	.calculator {
+		width: 98vw;
 	}
 }
 

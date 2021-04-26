@@ -2,13 +2,13 @@ import React from 'react';
 import Calc from './helpers/calc.js';
 import Format from './helpers/format.js';
 import BalanceChart from './BalanceChart.jsx';
-class BigResult extends React.Component{
-	render(){
-		let Result = Calc.all(this.props.cards);
+class BigResult extends React.Component {
+	render() {
+		let Result = Calc.all(this.props.cards, this.props.addExtra);
 		return (<div className="big-result">
 			<div className="result-main single-result">
-				<label>Debt repayment using credit card minimums total</label>
-				<span>{Format.usd( Result.total*100, false )}</span>
+				<label>{this.props.addExtra ? "Paying a little more than required minimum total" : "Debt repayment using credit card minimums total"}</label>
+				<span>{Format.usd(Result.total * 100, false)}</span>
 			</div>
 			<button className="view-report" onClick={() => this.props.report()}>View report</button>
 			<div className="result-secondary">
@@ -18,12 +18,12 @@ class BigResult extends React.Component{
 				</div>
 				<div className="single-result">
 					<label>Interests paid</label>
-				<span>{Format.usd( Result.interestPaid*100 )}</span>
+					<span>{Format.usd(Result.interestPaid * 100)}</span>
 				</div>
 			</div>
 			<div className="result-chart single-result">
 				<label>Debt payoff is estimated at {Format.months(Result.payoff)}</label>
-				<BalanceChart schedule={Result.schedule}/>
+				<BalanceChart schedule={Result.schedule} />
 			</div>
 		</div>);
 	}

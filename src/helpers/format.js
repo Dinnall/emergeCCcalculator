@@ -1,7 +1,8 @@
 import Calc from './calc.js';
 var Format = {
 	usd: function(usd, includeWord=true){
-		usd = Calc.round(usd);
+		usd = Calc.round(usd, 1);
+		if(typeof usd === 'number' && /^[0-9]+\.[0-9]{1,2}$/.test(usd.toString())) return `$${usd}` + (includeWord ? ' USD' : '');
 		let numbers = this.getOnlyNumber(usd);
 		let first = numbers[0];
 		let decimals = numbers[1];

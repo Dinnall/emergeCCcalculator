@@ -1,5 +1,5 @@
 var Calc = {
-	single: function (inp){
+	single: function (inp, addExtra = false){
 		let data = {};
 		Object.assign(data, inp);
 		let result = {
@@ -14,13 +14,13 @@ var Calc = {
 		result.monthly = (data.minimum * data.balance) / 100;
 		result.monthly = this.round(result.monthly);
 
-		let Rep = this.getSchedule(data);
+		let Rep = this.getSchedule(data, addExtra);
 		Object.assign(result, Rep);
 		result.interestPaid = this.round( (result.total - data.balance) );		
 		result.payoff -= 1;
 		return result;
 	},
-	getSchedule: function(data){
+	getSchedule: function(data, addExtra = false){
 		let response = {
 			payoff:0,
 			total:0,
@@ -38,6 +38,7 @@ var Calc = {
 		for(let i=0;i<999;i++){
 			if(this.round(currBalance) <= 0) break;
 			let singlePayment = (data.minimum * currBalance) / 100;
+			if(data.extra && addExtra) singlePayment += parseFloat(data.extra / 100);
 			if(singlePayment < 15) singlePayment = 15;
 			let singleInterest = (MR * currBalance) / 100;
 
@@ -62,7 +63,7 @@ var Calc = {
 		response.total = this.round(response.total);
 		return response;
 	},
-	all: function(cards){
+	all: function(cards, addExtra = false){
 		let result = {
 			monthly: 0,
 			payoff: 0,
@@ -71,7 +72,7 @@ var Calc = {
 			schedule: []
 		};
 		cards.forEach(singleCard => {
-			let singleResult = this.single(singleCard);
+			let singleResult = this.single(singleCard, addExtra);
 			result.monthly += singleResult.monthly;
 			if(singleResult.payoff > result.payoff) result.payoff = singleResult.payoff;
 			result.total += singleResult.total;

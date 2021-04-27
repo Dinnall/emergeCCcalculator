@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/emergeCCcalculator/static/css/main.c5bf3286.chunk.css",
-    "main.js": "/emergeCCcalculator/static/js/main.9d35f794.chunk.js",
-    "main.js.map": "/emergeCCcalculator/static/js/main.9d35f794.chunk.js.map",
+    "main.css": "/emergeCCcalculator/static/css/main.690ff218.chunk.css",
+    "main.js": "/emergeCCcalculator/static/js/main.94e8cb4c.chunk.js",
+    "main.js.map": "/emergeCCcalculator/static/js/main.94e8cb4c.chunk.js.map",
     "runtime-main.js": "/emergeCCcalculator/static/js/runtime-main.27a8a64d.js",
     "runtime-main.js.map": "/emergeCCcalculator/static/js/runtime-main.27a8a64d.js.map",
     "static/css/2.adc6f56e.chunk.css": "/emergeCCcalculator/static/css/2.adc6f56e.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.dd05ab43.chunk.js.map": "/emergeCCcalculator/static/js/2.dd05ab43.chunk.js.map",
     "index.html": "/emergeCCcalculator/index.html",
     "static/css/2.adc6f56e.chunk.css.map": "/emergeCCcalculator/static/css/2.adc6f56e.chunk.css.map",
-    "static/css/main.c5bf3286.chunk.css.map": "/emergeCCcalculator/static/css/main.c5bf3286.chunk.css.map",
+    "static/css/main.690ff218.chunk.css.map": "/emergeCCcalculator/static/css/main.690ff218.chunk.css.map",
     "static/js/2.dd05ab43.chunk.js.LICENSE.txt": "/emergeCCcalculator/static/js/2.dd05ab43.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.27a8a64d.js",
     "static/css/2.adc6f56e.chunk.css",
     "static/js/2.dd05ab43.chunk.js",
-    "static/css/main.c5bf3286.chunk.css",
-    "static/js/main.9d35f794.chunk.js"
+    "static/css/main.690ff218.chunk.css",
+    "static/js/main.94e8cb4c.chunk.js"
   ]
 }

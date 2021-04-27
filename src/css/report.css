@@ -83,8 +83,3 @@
 .report tbody td:hover {
 	background: var(--pink);
 }
-
-
-.saving-override {
-	color: green !important;
-}

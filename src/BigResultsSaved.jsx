@@ -2,6 +2,9 @@ import React from 'react';
 import Calc from './helpers/calc.js';
 import Format from './helpers/format.js';
 import BalanceChart from './BalanceChart.jsx';
+import { FaRegQuestionCircle } from "react-icons/fa";
+
+
 class BigResultsSaved extends React.Component {
     render() {
         let Result = Calc.all(this.props.cards, this.props.addExtra);
@@ -16,8 +19,8 @@ class BigResultsSaved extends React.Component {
                     <label>Time to Payoff</label>
                     <span>{Format.months(Result.payoff)}</span>
                 </div>
-                <div className="single-result">
-                    <label style={{ color: "green" }}>Interests Saved</label>
+                <div className="single-result">              
+                    <label style={{ color: "blue" }}>Interests Saved <FaRegQuestionCircle /></label>
                     <span  style={{ color: "green" }}>{Format.usd(Result.interestPaid * 100)}</span>
                 </div>
             </div>

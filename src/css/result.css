@@ -49,6 +49,9 @@
 	margin-top: 50px;
 }
 
+.interest-saved{
+	margin-left: auto;
+}
 
 @media(max-width:768px) {
 	.big-result .result-secondary .single-result {

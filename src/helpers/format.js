@@ -30,9 +30,10 @@ var Format = {
 		}
 		return [number, decimals];
 	},
-	percent(per, name){
+	percent(per, name=false){
 		let percentage = per.toString().replaceAll(/[^0-9]/g, '');
+		if(name=='rate') percentage = (percentage / 100).toFixed(2);
 		return percentage+'%';
-	},
+	}
 }
 export default Format;

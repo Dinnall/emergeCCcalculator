@@ -27,7 +27,7 @@ var Calc = {
 			schedule: []
 		}
 		let currBalance = data.balance;
-		let APR = data.rate / 360;
+		let APR = data.rate / 36000;
 		let MR = APR * 30;
 		response.schedule.push({
 			payment:0,

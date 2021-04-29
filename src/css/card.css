@@ -16,6 +16,11 @@
 
 }
 
+
+.monthlyPayment{
+  padding-left: 16px;
+}
+
 .single-card .card-header .card-header-input,
 .single-card .card-summary .card-result {
   flex-grow: 1;
@@ -29,7 +34,7 @@
 }
 
 .single-card .card-header .card-header-input label {
-  opacity: .8;
+  opacity: 10.8;
 }
 
 .single-card .card-header .card-header-input.big {
@@ -63,23 +68,28 @@
 .single-card .card-header .card-header-input.bubble .input-wrapper {
   display: flex;
   flex-direction: column;
+
 }
 
 .single-card .card-header .card-header-input.bubble input:not([type="range"]) {
-  background: linear-gradient(50deg, var(--pink) 50%, var(--violet));
+  background: linear-gradient(50deg, var(--pink) 80%, var(--violet)); 
   color: white;
   height: 40px;
   width: auto;
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 8;
   font-size: 1.2em;
   padding: 8px;
   font-weight: bold;
   text-align: center;
+
+  border-bottom: 1px solid #ccc;
+  transition: 0.4s; 
+  
 }
 
 .single-card .card-header .card-header-input.bubble input[type="range"] {
-  margin-top: 5px;
+  margin-top: 4px;  
 }
 
 .single-card .card-summary {
@@ -121,11 +131,11 @@
 .add-card,
 .view-report {
   background: none;
-  width: 400px;
+  width: 360px;
   max-width: 90vw;
   margin: 0 auto;
   padding: 9px;
-  border: 2px solid var(--pink);
+  border: 3px solid var(--pink);
   color: var(--pink);
   font-size: 2em;
   border-radius: 2em;

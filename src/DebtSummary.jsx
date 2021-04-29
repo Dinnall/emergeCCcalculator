@@ -10,7 +10,7 @@ class DebtSummary extends React.Component {
 			totalBalance += parseFloat(singleCard.balance);
 		});
 		this.props.cards.forEach(singleCard => {
-			totalInterest += (singleCard.balance / totalBalance) * singleCard.rate;
+			totalInterest += (singleCard.balance / totalBalance) * (singleCard.rate / 100);
 		});
 		totalInterest = Calc.round(totalInterest);
 		return (
@@ -36,7 +36,7 @@ class DebtSummary extends React.Component {
 							return (<tr key={i}>
 								<th>Credit Card #{i + 1}</th>
 								<td>{Format.usd(singleCard.balance, false)}</td>
-								<td>{Format.percent(singleCard.rate)}</td>
+								<td>{Format.percent(singleCard.rate, 'rate')}</td>
 								<td>{Format.usd(singleResult.monthly * 100, false)}</td>
 								<td>{Format.usd(singleResult.interestPaid * 100, false)}</td>
 								<td>{Format.usd(singleResult.total * 100, false)}</td>

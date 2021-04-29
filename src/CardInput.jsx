@@ -4,10 +4,6 @@ class CardInput extends React.Component {
   constructor(props) {
     super(props);
     this.state = { editing: false, drag: false };
-    this.dragStartHandler = this.dragStartHandler.bind(this);
-    this.dragEndHandler = this.dragEndHandler.bind(this);
-    this.dragHandler = this.dragHandler.bind(this);
-    this.fakeChange = this.fakeChange.bind(this);
   }
   render() {
     let value = this.props.value;
@@ -18,6 +14,8 @@ class CardInput extends React.Component {
       case "bubble":
         if (this.props.name === 'extra')
           value = this.state.editing ? (value / 100).toFixed(2) : Format.usd(value, false);
+        else if (this.props.name === 'rate')
+          value = this.state.editing ? (value / 100).toFixed(2) : Format.percent(value, 'rate');
         else
           value = this.state.editing ? value : Format.percent(value);
         break;
@@ -49,46 +47,14 @@ class CardInput extends React.Component {
             onChange={this.props.onChange}
             onFocus={() => this.setState({ editing: true })}
             onBlur={() => this.setState({ editing: false })}
-            draggable={this.props.type === 'bubble' ? true : false}
-            onDragStart={this.dragStartHandler}
-            onDrag={this.dragHandler}
-            onDragEnd={this.dragEndHandler}
-            
           />
-          {this.props.type === 'bubble' &&
+          {this.props.type === 'bubble' && this.props.slider === true &&
 
             <input type="range" step={step} min={min} max={max} value={this.props.value} name={this.props.name} onChange={this.props.onChange} />
           }
         </div>
       </div>
     );
-  }
-  dragStartHandler(e) {
-    var img = new Image();
-    img.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=';
-    e.dataTransfer.setDragImage(img, 0, 0);
-    this.setState({ drag: e.clientX });
-  }
-  dragEndHandler() {
-    this.setState({ drag: false });
-  }
-  dragHandler(e) {
-    if (this.state.drag === false) return;
-    let diff = e.clientX - this.state.drag;
-    if (diff % 20 === 0) {
-      this.setState({ drag: e.clientX });
-      let current = parseInt(e.target.value, 10);
-      diff > 0 ? current++ : current--;
-      this.fakeChange(current);
-    }
-  }
-  fakeChange(val) {
-    this.props.onChange({
-      target: {
-        name: this.props.name,
-        value: val.toString()
-      }
-    });
   }
 }
 export default CardInput;

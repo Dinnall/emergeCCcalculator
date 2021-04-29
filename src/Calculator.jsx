@@ -1,18 +1,17 @@
 import React from 'react';
 import SingleCard from './SingleCard.jsx';
 import BigResult from './BigResult.jsx';
-import BigResultsSaved from './BigResultsSaved.jsx';
-
+import BigResultsSaved from "./BigResultsSaved.jsx";
 import Report from './Report.jsx';
 class Calculator extends React.Component {
 	constructor(props) {
 		super(props);
 		let defaultCards = [
 			{
-				balance: 300000,
-				rate: 20,
-				minimum: 10,
-				extra: 0
+				balance: "000000",
+				rate: "0.0%",
+				minimum: "00",
+				extra: "0"
 			}
 		];
 		let currentCards = localStorage.getItem('current-cards') ? JSON.parse(localStorage.getItem('current-cards')) : defaultCards;

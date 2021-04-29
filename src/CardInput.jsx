@@ -53,6 +53,7 @@ class CardInput extends React.Component {
             onDragStart={this.dragStartHandler}
             onDrag={this.dragHandler}
             onDragEnd={this.dragEndHandler}
+            
           />
           {this.props.type === 'bubble' &&
 

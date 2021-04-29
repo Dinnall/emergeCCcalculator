@@ -27,7 +27,6 @@ class SingleCard extends React.Component {
 					<CardResult label="Total payments" value={Format.usd(Result.total * 100)} />
 				</div>
 
-
 				<div className="card-footer">
 					{this.props.clone &&
 						<div className="card-clone pointer" onClick={() => this.props.clone()}>

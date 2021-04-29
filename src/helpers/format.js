@@ -33,6 +33,6 @@ var Format = {
 	percent(per, name){
 		let percentage = per.toString().replaceAll(/[^0-9]/g, '');
 		return percentage+'%';
-	}
+	},
 }
 export default Format;

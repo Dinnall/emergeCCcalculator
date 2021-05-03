@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,300&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 :root {
-	--background: #fbf6ef;
+	/* --background: #fbf6ef;  APP BACKGROUND COLOR */
 	--brown: #cfc7b8;
 	--lightpink: #cdbae8;
 	--purple: #341455;
 	--fucsia: #b40c66;
 	--gray: #fafafa;
 	--violet: #33208e;
-	--pink: #c24ba3;
+	/* --pink: #c24ba3; Add new card button color*/
 }
 
 body {
@@ -44,7 +44,7 @@ input {
 	font-size: 3em;
 	font-weight: bold;
 	text-align: center;
-	color: #351509;
+	color: #000066;
 	text-shadow: -1px 0 #91C9D0,
 	0 1px #91C9D0,
 	1px 0 #91C9D0,

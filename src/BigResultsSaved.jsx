@@ -20,8 +20,8 @@ class BigResultsSaved extends React.Component {
                     <span>{Format.months(Result.payoff)}</span>
                 </div>
                 <div className="single-result">              
-                    <label style={{ color: "blue" }}>Interests Saved <FaRegQuestionCircle /></label>
-                    <span  style={{ color: "green" }}>{Format.usd(Result.interestPaid * 100)}</span>
+                    <label style={{ color: "#FF6200", fontSize: "x-large" }}>Interests Saved <FaRegQuestionCircle /></label>
+                    <span style={{ color: "#FF6200" }}>{Format.usd(Result.interestPaid * 100)}</span>
                 </div>
             </div>
             <div className="result-chart single-result">

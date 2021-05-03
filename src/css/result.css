@@ -18,8 +18,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	color: var(--violet);
-	font-weight: bold;
+	font-weight: 400;
 	text-align: center;
 }
 
@@ -27,7 +26,6 @@
 .big-result .result-main span {
 	font-size: 4vw;
 	font-family: 'Oswald';
-	line-height: 1;
 }
 
 .big-result .result-secondary {
@@ -73,14 +71,26 @@
 }
 
 .view-report {
-	color: var(--purple);
+	/* color: var(--purple);
 	border-color: var(--purple);
 	margin-top: 40px;
 	padding: 4px;
 	width: 250px;
-	font-size: 1.5em;
+	font-size: 1.5em; */
+
+	  display: inline-block;
+	  padding: 8px 24px;
+	  text-decoration: none;
+	  border-radius: 40px;
+	  background:#FF6200;
+	  color: #F2F2F2;
+	  transition: all .4s;
 }
 
-.view-report:hover {
+/* .view-report:hover {
 	background: var(--purple);
+} */
+
+.view-report:hover {
+	background: #fff;
 }

@@ -41,7 +41,7 @@ class BalanceChart extends React.Component {
 								className="paymentChart"
 								curve="curveLinear"
 								data={data}
-								color="#33208e"
+								color="#014FA2"
 							/>
 						</XYPlot>
 					)}

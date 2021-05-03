@@ -49,7 +49,6 @@ class CardInput extends React.Component {
             onBlur={() => this.setState({ editing: false })}
           />
           {this.props.type === 'bubble' && this.props.slider === true &&
-
             <input type="range" step={step} min={min} max={max} value={this.props.value} name={this.props.name} onChange={this.props.onChange} />
           }
         </div>

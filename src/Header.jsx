@@ -3,7 +3,7 @@ class Header extends React.Component{
 	render(){
 		return (
 			<div className="Header">
-				Emerge CC Payment Calculator
+				CC Payment Calculator
 			</div>
 		);
 	}

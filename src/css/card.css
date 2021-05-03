@@ -49,7 +49,6 @@
 
 .single-card .card-header .card-header-input input {
   outline: none;
-  border: none;
   background: none;
 }
 
@@ -72,7 +71,7 @@
 }
 
 .single-card .card-header .card-header-input.bubble input:not([type="range"]) {
-  background: linear-gradient(50deg, var(--pink) 80%, var(--violet)); 
+  /* background: linear-gradient(50deg, var(--pink) 80%, var(--violet)); 
   color: white;
   height: 40px;
   width: auto;
@@ -84,7 +83,17 @@
   text-align: center;
 
   border-bottom: 1px solid #ccc;
-  transition: 0.4s; 
+  transition: 0.4s;  */
+
+  background: linear-gradient(50deg, var(--pink) 80%, var(--violet));
+  border-radius: 12px;
+  padding: 8;
+  font-size: 1.2em;
+  padding: 8px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  transition: 0.4s;
   
 }
 
@@ -130,23 +139,30 @@
 
 .add-card,
 .view-report {
-  background: none;
-  width: 360px;
+  font-size: 1.6em;
   max-width: 90vw;
   margin: 0 auto;
   padding: 9px;
-  border: 3px solid var(--pink);
-  color: var(--pink);
-  font-size: 2em;
-  border-radius: 2em;
+  display: inline-block;
+  padding: 8px 24px;
+  text-decoration: none;
+  border-radius: 40px;
+  background: #FF6200;
+  color: #F2F2F2;
+  transition: all .4s;
   cursor: pointer;
-  transition: .3s all;
+
+}
+
+button.view-report:hover {
+  background: black;
+  color: white;
 }
 
 .add-card:hover,
-.view-report:hover {
-  background: var(--pink);
-  color: var(--background);
+.view-report:hover{
+  background: black;
+  color: white;
 }
 
 @media(max-width:1300px) {

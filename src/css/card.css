@@ -53,7 +53,7 @@
 }
 
 .single-card .card-header .card-header-input.big input {
-  color: var(--pink);
+  color: gray;
   font-weight: bold;
   font-size: 2em;
 }
@@ -94,6 +94,7 @@
   text-align: center;
   border-bottom: 1px solid #ccc;
   transition: 0.4s;
+  color: gray;
   
 }
 

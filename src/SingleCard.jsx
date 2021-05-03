@@ -20,7 +20,7 @@ class SingleCard extends React.Component {
 				<div className="card-header">
 
 					<CardInput name="balance" value={this.props.data.balance} type="big" onChange={this.handleChange} label="Credit Card Balance" />
-					<CardInput name="rate" value={this.props.data.rate} type="bubble" onChange={this.handleChange} label="Credit Card APR" />
+					<CardInput name="rate" value={this.props.data.rate} type="bubble" onChange={this.handleChange} label="Interest Rate (APR)" />
 					<CardInput name="minimum" value={this.props.data.minimum} type="bubble" onChange={this.handleChange} label="Minimum Payment Due" />
 					<CardInput name="extra" value={this.props.data.extra} type="bubble" onChange={this.handleChange} label="Monthly Additionally" slider={true} />
 				</div>
